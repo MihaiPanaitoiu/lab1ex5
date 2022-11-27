@@ -17,16 +17,11 @@ namespace lab1ex5
 
             Console.WriteLine("Introduceti primul numar");
             int x = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Introduceti al doilea numar");
             int y = int.Parse(Console.ReadLine());
 
-            if (x < y)
-            {
-                Console.Write(x + " " + y);
-            } else
-            {
-                Console.Write(y + " " + x);
-            }
+            Console.WriteLine(x < y ? x + " " + y : y + " " + x);
         }
     }
 }
